@@ -4,7 +4,7 @@ This project implements a simple shell program with a basic login mechanism, sim
 
 ## Features
 
-- Login with a username and password
+- Login with a username: "user" and password: "password123"
 - A simulated shell environment that allows the user to execute common shell commands
 - A simple set of available commands:
   - `echo` - Outputs the provided text.
