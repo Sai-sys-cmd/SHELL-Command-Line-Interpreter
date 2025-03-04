@@ -131,7 +131,7 @@ int main() {
 
         else if (strcmp(command, "top") == 0) {
             printf("Top processes:\n");
-            printf("PID   USER   %CPU   %MEM\n");
+            printf("PID   USER   %%CPU   %%MEM\n");
             printf("1234  user   5.0    1.2\n");
             printf("2345  user   3.5    2.1\n");
         }
@@ -166,8 +166,8 @@ int main() {
         }
 
         else if (strcmp(command, "df") == 0) {
-            printf("Filesystem    1K-blocks    Used Available Use% Mounted on\n");
-            printf("/dev/sda1      1024000  500000  524000  50% /home\n");
+            printf("Filesystem    1K-blocks    Used Available Use%% Mounted on\n");
+            printf("/dev/sda1      1024000  500000  524000  50%% //home\n");
         }
 
         else if (strcmp(command, "du") == 0) {
