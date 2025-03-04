@@ -5,6 +5,7 @@
 #include <time.h>
 
 int main() {
+    
     char input[1024];
     char command[1024];
     int running = 1;
@@ -40,12 +41,15 @@ int main() {
 
     time_t now = time(NULL);
     struct tm *local_time = localtime(&now);
+    
     printf("%02d-%02d-%04d %02d:%02d:%02d\n",
            local_time->tm_mon + 1, local_time->tm_mday, local_time->tm_year + 1900,
            local_time->tm_hour, local_time->tm_min, local_time->tm_sec);
+    
     printf("Type 'exit' to quit the shell.\n");
 
     while (running) {
+        
         if (getcwd(cwd, sizeof(cwd)) != NULL) {
             printf("%s@%s:%s$ ", username, hostname, cwd);
         }
@@ -208,6 +212,7 @@ int main() {
         else {
             printf("Command not found: %s\n", command);
         }
+        
     }
 
     return 0;
