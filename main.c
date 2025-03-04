@@ -166,8 +166,8 @@ int main() {
         }
 
         else if (strcmp(command, "df") == 0) {
-            printf("Filesystem    1K-blocks  Used    Available  Use%% Mounted on\n");
-            printf("/dev/sda1     1024000    500000  524000     50%%  /home\n");
+            printf("Filesystem    1K-blocks  Used    Available  Use%%  Mounted on\n");
+            printf("/dev/sda1     1024000    500000  524000     50%%   /home\n");
         }
 
         else if (strcmp(command, "du") == 0) {
